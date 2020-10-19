@@ -46,12 +46,12 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Premio, function (sprite, otherS
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadVertical, function (sprite, location) {
     if (ayuda == "S") {
-        tiles.setTileAt(tiles.getTileLocation(0, 0), myTiles.tile1)
+        tiles.setTileAt(location, myTiles.tile1)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.vehicle.roadHorizontal, function (sprite, location) {
     if (ayuda == "S") {
-        tiles.setTileAt(tiles.getTileLocation(0, 0), myTiles.tile2)
+        tiles.setTileAt(location, myTiles.tile2)
     }
 })
 function Fondos () {
